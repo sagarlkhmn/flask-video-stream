@@ -2,7 +2,7 @@
 from importlib import import_module
 import os
 from flask import Flask, render_template, Response
-
+# https://stackoverflow.com/questions/26691189/how-to-capture-video-stream-with-opencv-python
 # import camera driver
 if os.environ.get('CAMERA'):
     Camera = import_module('camera_' + os.environ['CAMERA']).Camera
